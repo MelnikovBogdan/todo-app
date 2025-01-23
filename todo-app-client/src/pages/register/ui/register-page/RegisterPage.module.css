@@ -1,0 +1,94 @@
+.registerPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    width: 100dvw;
+}
+
+.registerPage__formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    max-width: 400px;
+    padding: 24px 28px 24px 28px;
+    border: 1px solid var(--brand-gray-light);
+    border-radius: 20px;
+    background: white;
+}
+
+.registerPage__title {
+    font-size: 28px;
+    color: var(--brand-black);
+    line-height: 120%;
+    margin-bottom: 6px;
+}
+
+.registerPage__description {
+    font-size: 16px;
+    color: var(--brand-gray);
+    margin-bottom: 16px;
+}
+
+.registerPage__linkButton {
+    padding: 0;
+    height: fit-content;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.registerPage__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.registerPage__form__input {
+    width: 100%;
+}
+
+.registerPage__form__input_emailInput {
+    margin-bottom: 12px;
+}
+
+.registerPage__form__input_passwordInput {
+    margin-bottom: 20px;
+}
+
+.registerPage__form__assignButton {
+    display: flex;
+    align-self: end;
+    width: 100%;
+}
+
+.registerPage__form__error {
+    display: block;
+    font-size: 14px;
+    color: #E71300FF;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+    .registerPage__formContainer {
+        padding: 24px 24px 24px 24px;
+        max-width: 100%;
+        height: 100dvh;
+        border: none;
+        border-radius: 0;
+    }
+
+    .registerPage__title {
+        font-size: 28px;
+    }
+
+    .registerPage__form {
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    .registerPage__form__assignButton {
+        justify-self: flex-end;
+        margin-top: auto;
+    }
+}
